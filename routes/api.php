@@ -18,4 +18,5 @@ use App\Http\Controllers\Login;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
 Route::POST('login', [Login::class , 'index']);
